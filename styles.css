@@ -8,6 +8,7 @@
 html {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,12 @@ div > ul > img {
     min-height: 50px;
 }
 
+ul.nav-items > li > a:hover {
+    color: white;
+    border-bottom: 1px solid #68FFE1;
+    transition: border-bottom 350ms ease-in;
+    transition: color 250ms ease-in;
+}
 
 
 /* center elements inside left and right padding*/
@@ -38,6 +45,11 @@ div > ul > img {
 .nav-list {
     display: grid;
     min-width: 25vw;
+}
+
+li.resume-lg {
+    padding: 0 0 !important;
+    margin: 0 0 !important;
 }
 
 .logo {
@@ -88,16 +100,12 @@ div > ul > img {
 }
 
 .about > h1 {
-    font-size: 6rem;
+    font-size: 6rem !important;
     font-weight: 600;
 }
 
 h4 {
     font-size: 1.75rem !important;
-}
-
-.about > h1 {
-    font-size: 6rem !important;
 }
 
 section > div > h1 {
@@ -115,6 +123,14 @@ section > div > h1 {
     opacity: 50%;
     margin-bottom: 2rem;
     margin-right: 4rem;
+}
+
+.contact-title {
+    margin-right: 24.5rem;
+}
+
+.form-control {
+    margin-top: 10rem;
 }
 
 .about > h2 {
@@ -267,6 +283,10 @@ section > div > h1 {
     display: flex;
 }
 
+.form-control {
+    min-width: 50rem;
+}
+
 
 
 @media (max-width: 768px) {
@@ -275,12 +295,12 @@ section > div > h1 {
     }
 
     .about > h1 {
-        font-size: 3rem;
+        font-size: 3rem !important;
         font-weight: 600;
     }
 
     .about > h2 {
-        font-size: 3rem;
+        font-size: 3rem !important;
         font-weight: 400;
         opacity: .5
     }
@@ -323,6 +343,10 @@ section > div > h1 {
     }
     .wrapper2 {
         max-width: 90vw !important;
+    }
+
+    .exp-title, .nav-list {
+        min-width: fit-content;
     }
 
 
